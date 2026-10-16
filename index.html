@@ -1,0 +1,630 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- ============================================================
+       SEO. Values in [BRACKETS] are placeholders; see README.md, section A.
+       ============================================================ -->
+  <title>East Meets West | Hot Buns &amp; Handcrafted Boba</title><!-- Add the city once known, e.g. "East Meets West | Buns & Boba | [CITY]" -->
+  <meta name="description" content="East Meets West serves hot steamed buns and handcrafted boba: milk teas, fruit teas and matcha, made your way with pearls, popping boba or jelly.">
+  <link rel="canonical" href="https://eastmeetswest.us/">
+  <meta name="theme-color" content="#1A1412">
+  <meta name="color-scheme" content="light dark">
+
+  <!-- Open Graph / social sharing preview -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="East Meets West">
+  <meta property="og:title" content="East Meets West | Hot Buns &amp; Handcrafted Boba">
+  <meta property="og:description" content="Hot steamed buns and handcrafted boba. See the menu and build your own drink.">
+  <meta property="og:url" content="https://eastmeetswest.us/">
+  <meta property="og:image" content="https://eastmeetswest.us/assets/images/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Stacks of bamboo steamer baskets filled with fluffy white steamed buns">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://eastmeetswest.us/assets/images/og-image.jpg">
+
+  <!-- Favicon (replace assets/favicon.svg with the real logo mark) -->
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <!-- [PHOTO: apple-touch-icon] add a 180x180 PNG at assets/apple-touch-icon.png, then uncomment:
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png"> -->
+
+  <!-- Fonts: Fraunces (elegant display serif) + DM Sans (clean body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,700;1,9..144,400;1,9..144,600&display=swap" rel="stylesheet">
+
+  <link rel="preload" as="image" href="assets/images/hero.webp" type="image/webp">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+
+  <!-- Structured data for Google (schema.org Restaurant).
+       Replace placeholders; DELETE any line you cannot fill truthfully
+       (fix trailing commas so the JSON stays valid). -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "East Meets West",
+    "url": "https://eastmeetswest.us/",
+    "image": "https://eastmeetswest.us/assets/images/og-image.jpg",
+    "logo": "https://eastmeetswest.us/assets/favicon.svg",
+    "description": "Hot steamed buns and handcrafted boba.",
+    "servesCuisine": ["Boba tea", "Bubble tea", "Steamed buns"],
+    "priceRange": "[PRICE RANGE e.g. $ or $$]",
+    "telephone": "[PHONE e.g. +1-555-555-5555]",
+    "email": "[EMAIL]",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "[STREET ADDRESS]",
+      "addressLocality": "[CITY]",
+      "addressRegion": "[STATE]",
+      "postalCode": "[ZIP]",
+      "addressCountry": "US"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "[LATITUDE]",
+      "longitude": "[LONGITUDE]"
+    },
+    "openingHoursSpecification": [
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday"], "opens": "[HH:MM]", "closes": "[HH:MM]" }
+    ],
+    "hasMenu": "https://eastmeetswest.us/#menu",
+    "acceptsReservations": "[true/false]",
+    "sameAs": [
+      "[INSTAGRAM URL]",
+      "[TIKTOK URL]",
+      "[FACEBOOK URL]"
+    ]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ===================== HEADER / NAV ===================== -->
+  <header class="site-header" data-header>
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="East Meets West, home">
+        <!-- [LOGO] Replace this text mark with <img src="assets/images/logo.svg" alt="East Meets West" width="160" height="40"> -->
+        <span class="brand-mark" aria-hidden="true">EW</span>
+        <span class="brand-name">East <em>Meets</em> West</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span class="nav-toggle-bar" aria-hidden="true"></span>
+        <span class="visually-hidden">Menu</span>
+      </button>
+      <nav id="site-nav" class="site-nav" aria-label="Main">
+        <ul>
+          <li><a href="#buns">Hot Buns</a></li>
+          <li><a href="#boba">Boba</a></li>
+          <li><a href="#build">Build yours</a></li>
+          <li><a href="#about">Our Story</a></li>
+          <li><a href="#visit">Visit</a></li>
+          <li><a href="#contact" class="nav-cta">Order</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ===================== HERO ===================== -->
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <!-- Stock photo (Pexels). Replace with the owner's real photo: keep width/height in sync. -->
+      <img class="hero-img" src="assets/images/hero.webp" width="1920" height="1272"
+           alt="Stacks of bamboo steamer baskets filled with fluffy white steamed buns"
+           fetchpriority="high" decoding="async">
+      <div class="hero-overlay" aria-hidden="true"></div>
+      <div class="container hero-inner">
+        <p class="eyebrow eyebrow--light reveal">Buns &middot; Boba &middot; Good company</p>
+        <h1 id="hero-title" class="hero-title reveal">East <em>Meets</em> West</h1>
+        <p class="hero-tagline reveal">Hot buns &amp; handcrafted boba</p><!-- [TAGLINE] placeholder-safe default; replace with the owner's line if wanted -->
+        <div class="hero-actions reveal">
+          <a class="btn btn-primary" href="#menu">See the menu</a>
+          <a class="btn btn-glass" href="#visit">Find us</a>
+        </div>
+      </div>
+      <a class="hero-scroll" href="#menu" aria-label="Scroll to the menu"><span aria-hidden="true"></span></a>
+    </section>
+
+    <!-- Ticker strip (decorative words only, no claims) -->
+    <div class="ticker" aria-hidden="true">
+      <div class="ticker-track">
+        <span>Hot buns</span><span>Milk tea</span><span>Fruit tea</span><span>Matcha</span><span>Taro</span><span>Brown sugar</span><span>Thai tea</span><span>Mango</span>
+        <span>Hot buns</span><span>Milk tea</span><span>Fruit tea</span><span>Matcha</span><span>Taro</span><span>Brown sugar</span><span>Thai tea</span><span>Mango</span>
+      </div>
+    </div>
+
+    <!-- ===================== MENU ===================== -->
+    <div id="menu" class="menu-anchor"></div>
+
+    <section class="section menu-intro" aria-labelledby="menu-title">
+      <div class="container">
+        <header class="section-head section-head--center reveal">
+          <p class="eyebrow eyebrow--red">The menu</p>
+          <h2 id="menu-title">Something warm, something sippable</h2>
+          <p class="section-lede">Pillowy steamed buns on one side, colorful boba on the other. Pick one of each.</p>
+          <p class="price-note">Prices are coming soon. <!-- Replace each "$—" with the real price, e.g. $5.50 --></p>
+        </header>
+        <div class="menu-jump reveal">
+          <a class="jump-card jump-card--buns" href="#buns">
+            <img src="assets/images/bun-classic-pork.webp" width="900" height="675" loading="lazy" decoding="async" alt="">
+            <span>Hot Buns</span>
+          </a>
+          <a class="jump-card jump-card--boba" href="#boba">
+            <img src="assets/images/boba-brown-sugar.webp" width="900" height="675" loading="lazy" decoding="async" alt="">
+            <span>Boba</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ---------- HOT BUNS ----------
+         TO ADD A CARD: copy one whole <article class="menu-card"> ... </article> block.
+         TO REMOVE A CARD: delete the whole <article> block.
+         Names and descriptions marked (sample) are generic filler; replace with the real menu. -->
+    <section class="section section--warm" id="buns" aria-labelledby="buns-title">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="eyebrow eyebrow--red">Steamed &amp; soft</p>
+          <h2 id="buns-title">Hot Buns</h2>
+          <p class="section-lede">Fluffy, warm and made for eating right away.</p><!-- (sample) -->
+        </header>
+
+        <div class="menu-grid">
+          <!-- (sample) -->
+          <article class="menu-card reveal">
+            <div class="menu-card-media">
+              <img src="assets/images/bun-classic-pork.webp" width="900" height="675" loading="lazy" decoding="async"
+                   alt="Two round white steamed buns in a bamboo steamer lined with paper">
+            </div>
+            <div class="menu-card-body">
+              <div class="menu-card-top">
+                <h3>Classic Pork Bun</h3>
+                <p class="price">$&mdash;</p>
+              </div>
+              <p class="desc">A soft, pleated steamed bun with a savory seasoned pork filling.</p>
+              <span class="tag">Classic</span>
+            </div>
+          </article>
+
+          <!-- (sample) -->
+          <article class="menu-card reveal">
+            <div class="menu-card-media">
+              <img src="assets/images/bun-bbq-pork-bao.webp" width="900" height="675" loading="lazy" decoding="async"
+                   alt="Folded bao buns filled with glazed meat, sauce and microgreens in a bamboo steamer">
+            </div>
+            <div class="menu-card-body">
+              <div class="menu-card-top">
+                <h3>BBQ Pork Bao</h3>
+                <p class="price">$&mdash;</p>
+              </div>
+              <p class="desc">Sweet and smoky barbecue pork tucked into a folded, pillowy bao.</p>
+            </div>
+          </article>
+
+          <!-- (sample) -->
+          <article class="menu-card reveal">
+            <div class="menu-card-media">
+              <img src="assets/images/bun-custard.webp" width="900" height="675" loading="lazy" decoding="async"
+                   alt="Smooth white steamed buns resting in a bamboo steamer">
+            </div>
+            <div class="menu-card-body">
+              <div class="menu-card-top">
+                <h3>Custard Bun</h3>
+                <p class="price">$&mdash;</p>
+              </div>
+              <p class="desc">A sweet bun with a warm, silky custard center.</p>
+              <span class="tag tag--gold">Sweet</span>
+            </div>
+          </article>
+
+          <!-- (sample) -->
+          <article class="menu-card reveal">
+            <div class="menu-card-media">
+              <img src="assets/images/bun-veggie.webp" width="900" height="675" loading="lazy" decoding="async"
+                   alt="A tray of fluffy steamed buns, each topped with a small red mark">
+            </div>
+            <div class="menu-card-body">
+              <div class="menu-card-top">
+                <h3>Veggie Bun</h3>
+                <p class="price">$&mdash;</p>
+              </div>
+              <p class="desc">Tender vegetables and mushrooms in a soft steamed bun.</p>
+              <!-- Only add a dietary tag (e.g. Vegetarian) once the recipe is confirmed. -->
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ---------- BOBA ---------- Same card pattern as Hot Buns.
+         Each card has a data-flavor that colors its accent: brown-sugar, taro, matcha, mango,
+         strawberry, thai, lychee, honeydew, fruit, milk-tea. -->
+    <section class="section" id="boba" aria-labelledby="boba-title">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="eyebrow eyebrow--jade">Bubble tea</p>
+          <h2 id="boba-title">Boba</h2>
+          <p class="section-lede">Creamy milk teas, bright fruit teas and everything in between.</p><!-- (sample) -->
+        </header>
+
+        <!-- Flavor chips (sample list). Add or remove <li> items freely. -->
+        <ul class="chips reveal" aria-label="Boba flavors">
+          <li class="chip" data-flavor="brown-sugar">Brown Sugar</li>
+          <li class="chip" data-flavor="taro">Taro</li>
+          <li class="chip" data-flavor="matcha">Matcha</li>
+          <li class="chip" data-flavor="mango">Mango</li>
+          <li class="chip" data-flavor="strawberry">Strawberry</li>
+          <li class="chip" data-flavor="thai">Thai Tea</li>
+          <li class="chip" data-flavor="lychee">Lychee</li>
+          <li class="chip" data-flavor="honeydew">Honeydew</li>
+          <li class="chip" data-flavor="milk-tea">Classic Milk Tea</li>
+        </ul>
+
+        <div class="menu-grid menu-grid--boba">
+          <!-- (sample) -->
+          <article class="menu-card reveal" data-flavor="brown-sugar">
+            <div class="menu-card-media">
+              <img src="assets/images/boba-brown-sugar.webp" width="900" height="675" loading="lazy" decoding="async"
+                   alt="Creamy milk tea with dark tapioca pearls in a glass with a gold straw">
+            </div>
+            <div class="menu-card-body">
+              <div class="menu-card-top">
+                <h3>Brown Sugar Boba</h3>
+                <p class="price">$&mdash;</p>
+              </div>
+              <p class="desc">Fresh milk swirled with caramel-dark brown sugar syrup and chewy pearls.</p>
+              <span class="tag tag--flavor">Brown sugar</span>
+            </div>
+          </article>
+
+          <!-- (sample) -->
+          <article class="menu-card reveal" data-flavor="taro">
+            <div class="menu-card-media">
+              <img src="assets/images/boba-taro.webp" width="900" height="675" loading="lazy" decoding="async"
+                   alt="Purple taro milk tea with a sprinkle-coated rim beside a pool">
+            </div>
+            <div class="menu-card-body">
+              <div class="menu-card-top">
+                <h3>Taro Milk Tea</h3>
+                <p class="price">$&mdash;</p>
+              </div>
+              <p class="desc">Nutty, lightly sweet taro blended into a smooth lavender milk tea.</p>
+              <span class="tag tag--flavor">Taro</span>
+            </div>
+          </article>
+
+          <!-- (sample) -->
+          <article class="menu-card reveal" data-flavor="matcha">
+            <div class="menu-card-media">
+              <img src="assets/images/boba-matcha.webp" width="900" height="675" loading="lazy" decoding="async"
+                   alt="Iced matcha latte in a glass next to a bamboo whisk">
+            </div>
+            <div class="menu-card-body">
+              <div class="menu-card-top">
+                <h3>Matcha Latte</h3>
+                <p class="price">$&mdash;</p>
+              </div>
+              <p class="desc">Earthy green tea whisked into creamy milk over ice.</p>
+              <span class="tag tag--flavor">Matcha</span>
+            </div>
+          </article>
+
+          <!-- (sample) -->
+          <article class="menu-card reveal" data-flavor="mango">
+            <div class="menu-card-media">
+              <img src="assets/images/boba-mango.webp" width="900" height="675" loading="lazy" decoding="async"
+                   alt="Tall glass of pale yellow tea with tapioca pearls and a citrus twist">
+            </div>
+            <div class="menu-card-body">
+              <div class="menu-card-top">
+                <h3>Mango Fruit Tea</h3>
+                <p class="price">$&mdash;</p>
+              </div>
+              <p class="desc">Sunny mango shaken with tea and ice. Great with popping boba.</p>
+              <span class="tag tag--flavor">Mango</span>
+            </div>
+          </article>
+
+          <!-- (sample) -->
+          <article class="menu-card reveal" data-flavor="thai">
+            <div class="menu-card-media">
+              <img src="assets/images/boba-thai-tea.webp" width="900" height="675" loading="lazy" decoding="async"
+                   alt="Orange Thai milk tea being poured over tapioca pearls, with a dish of pearls beside it">
+            </div>
+            <div class="menu-card-body">
+              <div class="menu-card-top">
+                <h3>Thai Tea</h3>
+                <p class="price">$&mdash;</p>
+              </div>
+              <p class="desc">Bold, spiced black tea with a creamy finish and that signature orange glow.</p>
+              <span class="tag tag--flavor">Thai tea</span>
+            </div>
+          </article>
+
+          <!-- (sample) -->
+          <article class="menu-card reveal" data-flavor="strawberry">
+            <div class="menu-card-media">
+              <img src="assets/images/boba-strawberry.webp" width="900" height="675" loading="lazy" decoding="async"
+                   alt="Glass of pink strawberry milk with strawberry pieces">
+            </div>
+            <div class="menu-card-body">
+              <div class="menu-card-top">
+                <h3>Strawberry Milk</h3>
+                <p class="price">$&mdash;</p>
+              </div>
+              <p class="desc">Sweet strawberry and cold milk. Pretty in pink, caffeine-free.</p>
+              <span class="tag tag--flavor">Strawberry</span>
+            </div>
+          </article>
+
+          <!-- (sample) -->
+          <article class="menu-card reveal" data-flavor="fruit">
+            <div class="menu-card-media">
+              <img src="assets/images/boba-fruit-tea.webp" width="900" height="675" loading="lazy" decoding="async"
+                   alt="Two iced fruit teas with kiwi and strawberry pieces, seen from above">
+            </div>
+            <div class="menu-card-body">
+              <div class="menu-card-top">
+                <h3>Lychee Green Tea</h3>
+                <p class="price">$&mdash;</p>
+              </div>
+              <p class="desc">Light jasmine green tea with floral lychee. Add jelly for extra fun.</p>
+              <span class="tag tag--flavor">Fruit tea</span>
+            </div>
+          </article>
+
+          <!-- (sample) -->
+          <article class="menu-card reveal" data-flavor="honeydew">
+            <div class="menu-card-media">
+              <img src="assets/images/gallery-boba-trio.webp" width="640" height="800" loading="lazy" decoding="async"
+                   alt="Three tall boba drinks in taro, green and pink with tapioca pearls">
+            </div>
+            <div class="menu-card-body">
+              <div class="menu-card-top">
+                <h3>Honeydew Smoothie</h3>
+                <p class="price">$&mdash;</p>
+              </div>
+              <p class="desc">Blended honeydew melon, icy and refreshing.</p>
+              <span class="tag tag--flavor">Honeydew</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== BUILD YOUR BOBA ===================== -->
+    <section class="section section--ink" id="build" aria-labelledby="build-title">
+      <div class="container">
+        <header class="section-head section-head--center section-head--light reveal">
+          <p class="eyebrow eyebrow--gold">Make it yours</p>
+          <h2 id="build-title">Build your boba</h2>
+          <p class="section-lede">Three easy steps to your perfect cup.</p>
+        </header>
+
+        <!-- Options below are (sample). Replace with the real bases, flavors and toppings. -->
+        <ol class="build">
+          <li class="build-step reveal">
+            <div class="build-icon" aria-hidden="true">
+              <svg viewBox="0 0 64 64"><path d="M18 14h28l-3.5 40a4 4 0 0 1-4 3.6h-13a4 4 0 0 1-4-3.6z" fill="none" stroke="currentColor" stroke-width="3" stroke-linejoin="round"/><path d="M20.2 30h23.6l-2 22.6H22.2z" fill="currentColor" opacity=".35"/><path d="M40 14 46 4" stroke="currentColor" stroke-width="3" stroke-linecap="round"/></svg>
+            </div>
+            <span class="build-num">Step 1</span>
+            <h3>Pick a tea base</h3>
+            <ul class="mini-list">
+              <li>Black tea</li><li>Jasmine green</li><li>Oolong</li><li>Milk (no tea)</li>
+            </ul>
+          </li>
+          <li class="build-arrow" aria-hidden="true"></li>
+          <li class="build-step reveal">
+            <div class="build-icon" aria-hidden="true">
+              <svg viewBox="0 0 64 64"><circle cx="22" cy="24" r="10" fill="#9B7BC8"/><circle cx="42" cy="24" r="10" fill="#7FA650"/><circle cx="22" cy="44" r="10" fill="#F2B632"/><circle cx="42" cy="44" r="10" fill="#E86F8A"/></svg>
+            </div>
+            <span class="build-num">Step 2</span>
+            <h3>Choose a flavor</h3>
+            <ul class="chips chips--compact">
+              <li class="chip" data-flavor="taro">Taro</li>
+              <li class="chip" data-flavor="matcha">Matcha</li>
+              <li class="chip" data-flavor="mango">Mango</li>
+              <li class="chip" data-flavor="strawberry">Strawberry</li>
+              <li class="chip" data-flavor="brown-sugar">Brown Sugar</li>
+              <li class="chip" data-flavor="thai">Thai</li>
+            </ul>
+          </li>
+          <li class="build-arrow" aria-hidden="true"></li>
+          <li class="build-step reveal">
+            <div class="build-icon" aria-hidden="true">
+              <svg viewBox="0 0 64 64"><circle cx="16" cy="40" r="7" fill="#2A1A12"/><circle cx="28" cy="46" r="7" fill="#3A2418"/><circle cx="22" cy="30" r="6" fill="#4A2E1E"/><circle cx="44" cy="22" r="7" fill="#F2B632" opacity=".9"/><circle cx="41.5" cy="19.5" r="2" fill="#fff" opacity=".7"/><rect x="38" y="36" width="16" height="16" rx="3" fill="#7FA650" opacity=".75"/></svg>
+            </div>
+            <span class="build-num">Step 3</span>
+            <h3>Add toppings</h3>
+            <ul class="mini-list">
+              <li>Tapioca pearls</li><li>Popping boba</li><li>Fruit jelly</li>
+            </ul>
+            <p class="build-note">Topping prices: $&mdash;</p>
+          </li>
+        </ol>
+
+        <figure class="pearls reveal">
+          <img src="assets/images/tapioca-pearls.webp" width="900" height="675" loading="lazy" decoding="async"
+               alt="Close-up of glossy dark tapioca pearls in a glass dish next to a milk tea">
+          <figcaption>Chewy, glossy, irresistible: the pearl is the point.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ===================== GALLERY STRIP ===================== -->
+    <section class="section section--compact gallery-section" aria-labelledby="gallery-title">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="eyebrow eyebrow--red">A little taste</p>
+          <h2 id="gallery-title">From the steamer &amp; the shaker</h2>
+        </header>
+      </div>
+      <!-- Stock photos for now; swap in the owner's own photos (same 4:5 shape works best). -->
+      <ul class="gallery" tabindex="0" aria-label="Photo gallery, scroll sideways">
+        <li><img src="assets/images/gallery-bao-steamer.webp" width="640" height="800" loading="lazy" decoding="async" alt="Bao buns piled with sauce and fresh greens in a bamboo steamer"></li>
+        <li><img src="assets/images/gallery-colorful.webp" width="640" height="800" loading="lazy" decoding="async" alt="Iced tea, a purple taro drink and an iced coffee on a wooden board"></li>
+        <li><img src="assets/images/gallery-green-buns.webp" width="640" height="801" loading="lazy" decoding="async" alt="Pale green steamed buns lined up in a bamboo steamer"></li>
+        <li><img src="assets/images/gallery-boba-trio.webp" width="640" height="800" loading="lazy" decoding="async" alt="Three tall boba drinks with tapioca pearls against a pale blue wall"></li>
+        <li><img src="assets/images/gallery-steamer.webp" width="640" height="800" loading="lazy" decoding="async" alt="Open bamboo steamers with soft buns on a marble table"></li>
+      </ul>
+    </section>
+
+    <!-- ===================== ABOUT ===================== -->
+    <section class="section section--warm" id="about" aria-labelledby="about-title">
+      <div class="container about-inner">
+        <div class="about-media reveal">
+          <!-- [PHOTO: about] stock photo for now; use the owner, the team or the counter. -->
+          <img src="assets/images/about.webp" width="900" height="1125" loading="lazy" decoding="async"
+               alt="A glass of boba milk tea on a wooden counter in a warmly lit cafe">
+        </div>
+        <div class="about-copy reveal">
+          <p class="eyebrow eyebrow--red">Our story</p>
+          <h2 id="about-title">Two traditions, one counter</h2><!-- [ABOUT HEADLINE] -->
+          <p class="placeholder">[OUR STORY PARAGRAPH 1: who started East Meets West and why]</p>
+          <p class="placeholder">[OUR STORY PARAGRAPH 2: what "East meets West" means in your food]</p>
+          <p class="signature placeholder">[OWNER NAME], [TITLE]</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== HOURS & LOCATION ===================== -->
+    <section class="section" id="visit" aria-labelledby="visit-title">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="eyebrow eyebrow--jade">Come say hi</p>
+          <h2 id="visit-title">Hours &amp; location</h2>
+        </header>
+
+        <div class="visit-grid">
+          <div class="card visit-card reveal">
+            <h3>Address</h3>
+            <address class="placeholder">
+              [STREET ADDRESS]<br>
+              [CITY], [STATE] [ZIP]
+            </address>
+            <p class="muted placeholder">[PARKING / ACCESS NOTE]</p>
+            <a class="btn btn-outline btn-sm" href="#visit" data-placeholder-link>Get directions</a><!-- set href to [GOOGLE MAPS DIRECTIONS LINK] -->
+
+            <h3 class="hours-title">Hours</h3>
+            <table class="hours">
+              <caption class="visually-hidden">Opening hours</caption>
+              <tbody>
+                <tr><th scope="row">Monday</th><td>[HOURS]</td></tr>
+                <tr><th scope="row">Tuesday</th><td>[HOURS]</td></tr>
+                <tr><th scope="row">Wednesday</th><td>[HOURS]</td></tr>
+                <tr><th scope="row">Thursday</th><td>[HOURS]</td></tr>
+                <tr><th scope="row">Friday</th><td>[HOURS]</td></tr>
+                <tr><th scope="row">Saturday</th><td>[HOURS]</td></tr>
+                <tr><th scope="row">Sunday</th><td>[HOURS]</td></tr>
+              </tbody>
+            </table>
+            <p class="muted small placeholder">[HOLIDAY HOURS NOTE, or delete this line]</p>
+          </div>
+
+          <div class="map-wrap reveal">
+            <!-- [MAP] Google Maps embed:
+                 1. Open Google Maps, search your address, click Share -> Embed a map -> Copy HTML.
+                 2. Paste only the src="..." value into the iframe below, uncomment it,
+                    and delete the <div class="map-placeholder"> block.
+
+            <iframe
+              src="[GOOGLE MAPS EMBED URL]"
+              title="Map showing East Meets West location"
+              width="600" height="450" style="border:0"
+              allowfullscreen loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+            -->
+            <div class="map-placeholder" role="img" aria-label="Map placeholder">
+              <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M24 4c-7.7 0-14 6.1-14 13.7C10 28 24 44 24 44s14-16 14-26.3C38 10.1 31.7 4 24 4z" fill="currentColor"/><circle cx="24" cy="18" r="5.5" fill="#fff"/></svg>
+              <span>[MAP: Google Maps embed]</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== ORDER & CONTACT ===================== -->
+    <section class="section section--band" id="contact" aria-labelledby="contact-title">
+      <img class="band-bg" src="assets/images/gallery-boba-trio.webp" width="640" height="800" loading="lazy" decoding="async" alt="">
+      <div class="container band-inner">
+        <header class="section-head section-head--center section-head--light reveal">
+          <p class="eyebrow eyebrow--gold">Order &amp; contact</p>
+          <h2 id="contact-title">Hungry? Thirsty? Both?</h2>
+          <p class="section-lede placeholder">[CONTACT INTRO: pickup, delivery, catering, only what you actually offer]</p>
+        </header>
+
+        <ul class="contact-list reveal">
+          <li>
+            <span class="contact-label">Order online</span>
+            <a href="#contact" data-placeholder-link>[ORDER LINK TEXT]</a><!-- href: [ORDER LINK] -->
+          </li>
+          <li>
+            <span class="contact-label">Call</span>
+            <!-- Use tel: with digits only, e.g. tel:+15555555555 -->
+            <a href="#contact" data-placeholder-link>[PHONE]</a><!-- href: tel:[PHONE DIGITS] -->
+          </li>
+          <li>
+            <span class="contact-label">Email</span>
+            <a href="#contact" data-placeholder-link>[EMAIL]</a><!-- href: mailto:[EMAIL] -->
+          </li>
+          <li>
+            <span class="contact-label">Catering</span>
+            <a href="#contact" data-placeholder-link>[CATERING TEXT, or delete this item]</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===================== SOCIAL ===================== -->
+    <section class="section section--compact" id="social" aria-labelledby="social-title">
+      <div class="container social-inner reveal">
+        <div>
+          <p class="eyebrow eyebrow--jade">Follow along</p>
+          <h2 id="social-title" class="social-title">Follow East Meets West</h2><!-- [SOCIAL HEADLINE] -->
+        </div>
+        <!-- Replace each href with the real profile URL ([INSTAGRAM URL] etc.); delete any platform you don't use. -->
+        <ul class="social-list">
+          <li><a class="social-link" href="#social" rel="noopener" data-placeholder-link>
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor"/></svg>
+            <span>Instagram</span></a></li>
+          <li><a class="social-link" href="#social" rel="noopener" data-placeholder-link>
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M14 3v11.5a3.5 3.5 0 1 1-3.5-3.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M14 3c.4 2.6 2.2 4.4 5 4.6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            <span>TikTok</span></a></li>
+          <li><a class="social-link" href="#social" rel="noopener" data-placeholder-link>
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M14 8h3V4h-3a4 4 0 0 0-4 4v2H7v4h3v7h4v-7h3l1-4h-4V8z" fill="currentColor"/></svg>
+            <span>Facebook</span></a></li>
+        </ul>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <p class="footer-brand">East <em>Meets</em> West</p>
+        <p class="muted small">Hot buns &amp; handcrafted boba.</p><!-- [FOOTER LINE] e.g. add the city -->
+      </div>
+      <nav aria-label="Footer">
+        <ul class="footer-links">
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#build">Build your boba</a></li>
+          <li><a href="#visit">Hours &amp; location</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="footer-meta">
+        <p class="muted small">&copy; <span data-year>2026</span> East Meets West. All rights reserved.</p>
+        <p class="muted small">Photos: <a href="assets/images/CREDITS.md">Unsplash/Pexels</a></p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
