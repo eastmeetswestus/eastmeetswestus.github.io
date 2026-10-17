@@ -1,6 +1,0 @@
-<!-- PLACEHOLDER favicon: replace with the real East Meets West logo mark (keep it square). -->
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-  <circle cx="32" cy="32" r="30" fill="#B23A2E"/>
-  <circle cx="32" cy="32" r="26" fill="none" stroke="#C99A4B" stroke-width="3"/>
-  <text x="32" y="40" text-anchor="middle" font-family="Georgia, serif" font-weight="700" font-size="22" fill="#FBF6EE">EW</text>
-</svg>
