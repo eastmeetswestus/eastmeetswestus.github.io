@@ -4,7 +4,7 @@ A static site (HTML, CSS and a little JavaScript) for **East Meets West**, which
 
 This business is separate from Confetti and Pixels Art and from TradeLedger / ContractorSheetsCo. Do not reuse their logos, accounts, copy or links here.
 
-**Status (2026-10-16):** finished design with free stock photos as filler. Domain set to `eastmeetswest.us` (`CNAME`, canonical, Open Graph, `robots.txt`, `sitemap.xml`). Menu names and descriptions are generic samples, each marked `<!-- (sample) -->` in `index.html`; every price shows `$—`. Address, hours, phone, email, order links, social links and the story are still `[PLACEHOLDER]`s. Nothing factual has been invented (no prices, address, hours, reviews or awards). Photo credits: `assets/images/CREDITS.md`. `_preview/` holds local screenshots and is excluded by `.gitignore` (do not upload it).
+**Status (2026-10-17):** real content. Every photo is the owner's own (folder EastmeetsWest/a/a), resized to WebP; the stock filler and CREDITS.md were removed. Menu names come from the owner's menu files. Owner rules: no prices on the site (they vary by market), no fixed address (local markets), phone 435-603-0712 for call and text, Instagram @eastmeetswest.asianfood. Strawberry boba has no owner photo, so it is a text-only card. The hero (hero-buns-*.webp) is the owner's char siu bao photo, denoised, upscaled and sharpened locally; hero-before-after.jpg is a local comparison (do not upload). The CNAME file stays local until DNS is set. _preview/ is local only.
 
 ```
 website/
@@ -16,8 +16,8 @@ website/
 ├── sitemap.xml       https://eastmeetswest.us/
 ├── CNAME             eastmeetswest.us (GitHub Pages custom domain)
 ├── assets/
-│   ├── favicon.svg   PLACEHOLDER logo mark
-│   └── images/       WebP photos (stock filler) + og-image.jpg + CREDITS.md
+│   ├── favicon-32.png, favicon-48.png, apple-touch-icon.png   from LOGO.png
+│   └── images/       owner photos (WebP), logo.webp, logo-mark.png, og-image.jpg
 └── README.md
 ```
 
@@ -56,7 +56,7 @@ This block tells Google you are a restaurant. Fill in the name, phone, email, ad
 - **Logo:** to use an image logo, replace the `EW` text mark in the header with the `<img>` line shown in the comment.
 
 ### 4. Photos
-The site now uses stock photos from Pexels/Unsplash (see `assets/images/CREDITS.md`). To swap in a real photo, save it in `assets/images/` with the same file name (same shape: buns/boba cards 4:3 at 900x675, gallery 4:5 at 640x800, about 4:5 at 900x1125, hero about 1920 wide), or change the `src`, `width`, `height` and `alt` on the `<img>`. Then delete its row in CREDITS.md.
+All photos are the owner's. To change one, save the new photo in `assets/images/` and update the `src`, `width`, `height` and `alt` on its `<img>`. Use only the owner's photos (no stock or AI images).
 
 Older notes for the original placeholder slots:
 Each photo slot is a `<div class="img-slot">`. To add a photo, replace the whole `<div ...>...</div>` with an `<img>`:
