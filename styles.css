@@ -552,3 +552,8 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 .menu-card--text h3 { font-size: clamp(1.3rem, 5vw, 1.7rem); color: color-mix(in srgb, var(--accent) 70%, var(--ink)); }
 .text-card-kicker { margin: 0; font-size: .75rem; font-weight: 700; letter-spacing: .16em; text-transform: uppercase; color: var(--ink-soft); }
 .hero .eyebrow { background: rgba(17, 12, 10, .55); padding: .3rem .75rem; border-radius: 999px; backdrop-filter: blur(4px); }
+.site-nav a { white-space: nowrap; }
+@media (min-width: 900px) and (max-width: 1140px) {
+  .header-call span { display: none; }
+  .site-nav a { padding: .5rem .55rem; font-size: .93rem; }
+}
